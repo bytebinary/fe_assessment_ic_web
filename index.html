@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- site stylesheet -->
+    <link
+      rel="stylesheet"
+      href="./styles.css"
+    />
+    <title>Front-End Developer Assessment</title>
+  </head>
+  <body>
+    <nav class="nav-overlap navbar navbar-light navbar-expand-lg">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand d-flex align-items-center"
+          href="#"
+        >
+          <img
+            class="logo"
+            width="30px"
+            src="./img/icon/logo.svg"
+            alt="development icon"
+          />&nbsp;&nbsp;Developer
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="toggleNav()"
+        >
+          <span id="menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="mainNav"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#services"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                News
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    >Action</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    >Another action</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    >Something else here</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div
+          class="swiper-slide"
+          stlye="height: 100vh;"
+        >
+          <div
+            class="slide-content d-flex flex-column align-items-center justify-content-center"
+          >
+            <h3>Development</h3>
+            <p>We are web developer</p>
+            <div class="cta-container">
+              <button
+                type="button"
+                class="btn btn-outline-light btn-cta btn-talk hidden-sm"
+              >
+                Talk with Us
+              </button>
+              <button
+                type="button"
+                class="btn btn-light btn-cta"
+              >
+                Learn More
+              </button>
+            </div>
+            <div
+              class="slide-bg"
+              style="
+                background: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80');
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="services">
+      <div class="container text-center">
+        <div
+          id="services"
+          class="row justify-content-center"
+        >
+          <h2 class="section-title d-flex justify-content-center w-100">
+            Our Services.
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="icon">
+              <img
+                src="./img/icon/www.svg"
+                alt="web design icon"
+              />
+            </div>
+            <h3>Web Design</h3>
+            <p>
+              at tempor commodo ullamcorper a lacus vestibulum sed arcu non odio
+              euismod lacinia at quis risus sed vulputate odio ut
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="icon">
+              <img
+                src="./img/icon/development.svg"
+                alt="development icon"
+              />
+            </div>
+            <h3>Development</h3>
+            <p>
+              eget magna fermentum iaculis eu non diam phasellus vestibulum
+              lorem sed risus ultricies tristique nulla aliquet enim tortor at
+              auctor
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="icon">
+              <img
+                src="./img/icon/branding.svg"
+                alt="branding icon"
+              />
+            </div>
+            <h3>Branding</h3>
+            <p>
+              egestas fringilla phasellus faucibus scelerisque eleifend donec
+              pretium vulputate sapien nec sagittis aliquam malesuada bibendum
+              arcu vitae elementum curabitur vitae
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="icon">
+              <img
+                src="./img/icon/photography.svg"
+                alt="photography icon"
+              />
+            </div>
+            <h3>Photography</h3>
+            <p>
+              quis varius quam quisque id diam vel quam elementum pulvinar etiam
+              non quam lacus suspendisse faucibus interdum posuere lorem ipsum
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="icon">
+              <img
+                src="./img/icon/typography.svg"
+                alt="typography icon"
+              />
+            </div>
+            <h3>Typography</h3>
+            <p>
+              viverra mauris in aliquam sem fringilla ut morbi tincidunt augue
+              interdum velit euismod in pellentesque massa placerat duis
+              ultricies lacus
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="icon">
+              <img
+                src="./img/icon/ui.svg"
+                alt="UI design icon"
+              />
+            </div>
+            <h3>UI Design</h3>
+            <p>
+              mauris nunc congue nisi vitae suscipit tellus mauris a diam
+              maecenas sed enim ut sem viverra aliquet eget sit amet
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="counter-section"
+      class="counters"
+    >
+      <div
+        id="intersect-observe"
+        class="container"
+      >
+        <div class="row justify-content-center align-items-center">
+          <div class="col-sm-12 col-md-3 col-lg-3 text-center">
+            <h4
+              class="count-up"
+              data-value="59"
+            ></h4>
+            <p class="caption">Awards</p>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3 text-center">
+            <h4
+              class="count-up"
+              data-value="1054"
+            ></h4>
+            <p class="caption">Clients</p>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3 text-center">
+            <g4
+              class="count-up"
+              data-value="34"
+            ></g4>
+            <p class="caption">Team</p>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3 text-center">
+            <h4
+              class="count-up"
+              data-value="154"
+            ></h4>
+            <p class="caption">Project</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="works">
+      <div class="row justify-content-center">
+        <h2 class="section-title d-flex justify-content-center w-100">
+          Great Work.
+        </h2>
+      </div>
+      <div class="gallery d-flex justify-content-center">
+        <a
+          href="#"
+          class="btn-filter active"
+          data-filter="all"
+          >All</a
+        >
+        <a
+          href="#"
+          class="btn-filter"
+          data-filter="branding"
+          >Branding</a
+        >
+        <a
+          href="#"
+          class="btn-filter"
+          data-filter="design"
+          >Design</a
+        >
+        <a
+          href="#"
+          class="btn-filter"
+          data-filter="photo"
+          >Photo</a
+        >
+        <a
+          href="#"
+          class="btn-filter"
+          data-filter="coffee"
+          >Coffee</a
+        >
+      </div>
+      <div class="row">
+        <div
+          class="portfolio mix col-sm-12 col-md-6 col-lg-3"
+          data-filter="branding"
+        >
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/927172160481431.63c92271daf54.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="portfolio mix col-sm-12 col-md-6 col-lg-3"
+          data-filter="branding"
+        >
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/78f602161615075.63c816d14aea5.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          <div
+          class="portfolio mix col-sm-12 col-md-6 col-lg-3"
+          data-filter="design"
+        >
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/a1bd5e161254789.63c1d62da1fc0.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          <div
+          class="portfolio mix col-sm-12 col-md-6 col-lg-3"
+          data-filter="design"
+        >
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/4f9247153509485.63ce8c8b64910.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          <div
+          class="portfolio mix col-sm-12 col-md-6 col-lg-3"
+          data-filter="photo"
+        >
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/d2115096489877.5eb3a85c35677.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          <div
+          class="portfolio mix col-sm-12 col-md-6 col-lg-3"
+          data-filter="photo"
+        >
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/b582d4151692417.6335b11dc631b.png"
+            alt=""
+          />
+        </div>
+        <div
+          <div
+          class="portfolio mix col-sm-12 col-md-6 col-lg-3"
+          data-filter="coffee"
+        >
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/882032160158033.63adfd7d0fcaf.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          <div
+          class="portfolio mix col-sm-12 col-md-6 col-lg-3"
+          data-filter="coffee"
+        >
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/b76d51156641075.63975b0489063.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <footer class="d-flex justify-content-center align-items-center">
+      <p class="d-flex align-items-center">
+        © 2023&nbsp;
+        <a
+          class="footer-link"
+          href="/"
+          ><img
+            width="22px"
+            src="./img/icon/development.svg"
+            alt="development icon"
+          />
+          Developer</a
+        >&nbsp;All Rights Reserved.
+      </p>
+    </footer>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script
+      type="module"
+      src="./main.js"
+    ></script>
+    <script>
+      const toggleNav = () => {
+        const menu = document.getElementById('menu');
+        if (menu.classList.contains('toggle')) {
+          menu.classList.remove('toggle');
+        } else {
+          menu.classList.add('toggle');
+        }
+      };
+    </script>
+  </body>
+</html>
